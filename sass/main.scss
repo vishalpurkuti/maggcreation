@@ -352,6 +352,38 @@ z-index: 0;
     
 }
 }
-
-
 //about ends
+//pop contact
+
+.pop-contact{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    position: fixed;
+    top:50vh;
+    right:0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0.8;
+    display: none;
+    a{
+        font-size:4rem;
+    }
+    a:hover{
+        color:$scolor
+    }
+    .pcitem{
+      
+          
+    }
+    .phone{
+        background:$tcolor;
+        min-width: auto;
+        padding:10px;
+        
+    }
+}
+
+
+//pop contact ends

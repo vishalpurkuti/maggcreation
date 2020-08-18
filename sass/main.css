@@ -410,4 +410,41 @@ a:hover {
     bottom: 0;
   }
 }
+
+.pop-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100px;
+  position: fixed;
+  top: 50vh;
+  right: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  opacity: 0.8;
+  display: none;
+}
+
+.pop-contact a {
+  font-size: 4rem;
+}
+
+.pop-contact a:hover {
+  color: #FFC312;
+}
+
+.pop-contact .phone {
+  background: #1B1464;
+  min-width: auto;
+  padding: 10px;
+}
 /*# sourceMappingURL=main.css.map */

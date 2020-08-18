@@ -16,7 +16,7 @@
     <header>
         <nav class="main-nav" id="nav">
             <div class="brand">
-                <a href="#nav">
+                <a href="./">
                     <h1>MAGG CREATION</h1>
                 </a>
             </div>
@@ -113,6 +113,13 @@
 
     </section>
 
+    <div class="pop-contact">
+        <div class="phone pcitem">
+            <a href="tel:014156237">&#x260E;</a>
+            <br>
+            <a href="mailto:vishalpurkuti197@example.com">&#x2709;</a>
+        </div>
+    </div>
 
     <!---JQUERY FOR NAV STARTS-->
     <script>
@@ -125,8 +132,18 @@
                 $('.more-nav-items').slideToggle('slow');
 
 
-            })
-        }) 
+            });
+
+        });
+        $(document).scroll(() => {
+
+            if ($(this).scrollTop() > 500) {
+                $('.pop-contact').fadeIn();
+            }
+            else {
+                $('.pop-contact').fadeOut();
+            }
+        });
     </script>
 
 
