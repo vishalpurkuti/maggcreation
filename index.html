@@ -16,8 +16,8 @@
     <header>
         <nav class="main-nav" id="nav">
             <div class="brand">
-                <a href="./">
-                    <h1>MAGG CREATION</h1>
+                <a href="#top">
+                    <h1 id="title">MAGG CREATION</h1>
                 </a>
             </div>
             <ul class="main-menu">
@@ -133,6 +133,10 @@
 
 
             });
+            $("a[href='#top']").click(function () {
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+            });
 
         });
         $(document).scroll(() => {
@@ -144,6 +148,7 @@
                 $('.pop-contact').fadeOut();
             }
         });
+
     </script>
 
 
