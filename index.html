@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='sass/main.css' />
+    <title>Magg Creation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="main-nav" id="nav">
+            <div class="brand">
+                <a href="#nav">
+                    <h1>MAGG CREATION</h1>
+                </a>
+            </div>
+            <ul class="main-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="">Services</a> </li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
+                <li id="more-nav">&#9776;</li>
+
+            </ul>
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="more-nav-items">
+        <ul>
+            <li><a href="">My Works</a></li>
+            <li><a href="">Research</a></li>
+            <li><a href="">Workshop</a></li>
+            <li><a href="">ALl about My works opsaodsfdof sfjsd</a></li>
+        </ul>
+    </div>
+
+    <!--banner starts-->
+    <div class="banner-container">
+        <div class="banner-slider">
+            <img src="images/Artboard 1.png" alt="">
+            <img src="images/dhak.jpg" alt="">
+            <img src="images/HappyFinal.jpg" alt="">
+            <img src="images/maggcreation.jpg" alt="">
+            <img src="images/Artboard 1.png" alt="">
+            <img src="images/dhak.jpg" alt="">
+            <img src="images/HappyFinal.jpg" alt="">
+            <img src="images/maggcreation.jpg" alt="">
+            <img src="images/Artboard 1.png" alt="">
+            <img src="images/dhak.jpg" alt="">
+            <img src="images/HappyFinal.jpg" alt="">
+            <img src="images/maggcreation.jpg" alt="">
+
+        </div>
+    </div>
+
+
+    <!--Banner Ends-->
+    <!--About Section Starts-->
+
+    <!--About Section Ends-->
+
+    <section class="about-container" id="about">
+        <div class="about">
+            <h2>What is MAGG CREATION ?</h2>
+            <hr>
+            <div class="about-flex" data-aos="fade-left">
+                <div class="about-item pic1 pic" data-aos="fade-right" data-aos-offset="200"></div>
+                <div class="about-item info">
+                    <h3>Freedom Of Creativity</h3>
+                    <p>
+                        We believe creativity is freedom to implement our imagination in real world. We promote and
+                        motivate
+                        creative minds and always open to work with them since 2018.
+                    </p>
+                    <button>Explore More</button>
+                </div>
+                <div class="about-item info" data-aos="zoom-out">
+                    <h3>Work Together! Grow Together</h3>
+                    <p>
+                        We believe creativity is freedom to implement our imagination in real world. We promote and
+                        motivate
+                        creative minds and always open to work with them since 2018.
+                    </p>
+                    <button>Work Now</button>
+                </div>
+                <div class="about-item pic2 pic" data-aos="zoom-out"></div>
+                <div class="about-item pic3 pic" data-aos="fade-down"></div>
+                <div class="about-item info" data-aos="fade-down">
+                    <h3>Designing To Next Level</h3>
+                    <p>
+                        We believe creativity is freedom to implement our imagination in real world. We promote and
+                        motivate
+                        creative minds and always open to work with them since 2018.
+                    </p>
+                    <button>Design Now</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!---JQUERY FOR NAV STARTS-->
+    <script>
+        $(document).ready(() => {
+            $('.burger').click(() => {
+                $('.main-menu').toggleClass('responsive-nav');
+                $('.more-nav-items').slideUp('slow');
+            });
+            $('#more-nav').click(() => {
+                $('.more-nav-items').slideToggle('slow');
+
+
+            })
+        }) 
+    </script>
+
+
+    <!---JQUERY FOR NAV END-->
+
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: "ease-in-out"
+        });
+    </script>
+
+    <!---AOS ends-->
+
+</body>
+
+</html>
